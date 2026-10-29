@@ -19,6 +19,10 @@ class HashMapImpl {
         int data = charCount.get('C');
         System.out.println("value of char C is: " + data);
 
+        // get a default when key is not present
+        int dataOrDefault = charCount.getOrDefault('D', -1);
+        System.out.println("value of char D is : " + dataOrDefault);
+
         // remove a key,value pair by key
         charCount.remove('B');
         System.out.println("hash map : " + charCount);
